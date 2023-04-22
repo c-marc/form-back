@@ -41,4 +41,4 @@ app.all("*", (req, res) => {
   res.json(404);
 });
 
-app.listen(3000, () => console.log("Up and running !"));
+app.listen(process.env.PORT, () => console.log("Up and running !"));
